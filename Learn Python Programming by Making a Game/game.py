@@ -28,8 +28,6 @@ while not finished:
     if 1 == pressedKeys[pygame.K_SPACE]:
         y += 5
 
-    screen.fill(white)
-
     screen.blit(backgroundImage, (0,0))
     screen.blit(playerImage, (playerX,playerY))
 
