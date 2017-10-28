@@ -7,4 +7,5 @@ finished = False
 
 while not finished:
     for event in pygame.event.get():
-        pass
+        if pygame.QUIT == event.type:
+            finished = True
