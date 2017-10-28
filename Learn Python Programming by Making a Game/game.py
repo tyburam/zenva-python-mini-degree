@@ -11,8 +11,8 @@ blue = (0,0,255)
 black = (0,0,0)
 white = (255, 255, 255)
 
-playerX = 0
-playerY = 50
+playerX = 450 - (35/2)
+playerY = 650
 
 playerImage = load_img("images/player.png", 35, 40).convert_alpha()
 backgroundImage = load_img("images/background.png", 900, 700)
@@ -26,7 +26,7 @@ while not finished:
     
     pressedKeys = pygame.key.get_pressed()
     if 1 == pressedKeys[pygame.K_SPACE]:
-        y += 5
+        y -= 5
 
     screen.blit(backgroundImage, (0,0))
     screen.blit(playerImage, (playerX,playerY))
